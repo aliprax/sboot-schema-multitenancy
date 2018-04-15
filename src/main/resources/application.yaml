@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: sboot-schema-multitenancy
+  profiles:
+    active: test
+  jackson:
+    date-format: com.fasterxml.jackson.databind.util.ISO8601DateFormat
+  jpa:
+    properties:
+      hibernate:
+        physical_naming_strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+
+flyway.enabled: true
+
