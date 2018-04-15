@@ -11,10 +11,6 @@ public class TenantSchemaResolver implements CurrentTenantIdentifierResolver {
 
 	private String defaultTenant ="DEFAULT_SCHEMA";
 
-	@Autowired
-	@Lazy
-	TenantRepository repository;
-
     @Override
 	public String resolveCurrentTenantIdentifier() {
 		String t =  TenantContext.getTenantSchema();
